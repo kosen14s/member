@@ -1,0 +1,11 @@
+@mixin inputbutton {
+  font-family: $noto-font;
+  margin: 0 2px;
+  border: none;
+  font-size: 1.3rem;
+  color:white;
+  line-height: 1.8rem;
+  border-radius: 5px;
+  padding: 2px 8px 4px;
+  border-radius: 5px;
+}
