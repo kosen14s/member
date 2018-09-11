@@ -5,7 +5,7 @@
         div
           .member-header
             .member-color
-            img(:src="'https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}'" :alt="'icon'").member-icon
+            img(:src="`https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}`" :alt="'icon'").member-icon
             .member-name
               h2 {{member.name}}
               <LinkList :links="member.links"/>
