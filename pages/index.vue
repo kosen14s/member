@@ -75,7 +75,7 @@ export default {
   //     })
   // },
   created: function() {
-    fetch('https://raw.githubusercontent.com/kosen14s/member/master/json/members.json')
+    fetch('https://raw.githubusercontent.com/kosen14s/member/master/members.json')
       .then(res => res.json())
       .then(json => {
         this.members = json
