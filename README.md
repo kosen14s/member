@@ -20,21 +20,36 @@ kosen14sのメンバーを紹介するサイトです。
 https://github.com/orgs/kosen14s/people 
 
 ### 1. アイコン画像をアップロード
-1-1. `icons` フォルダをクリック
-1-2. `Upload files` をクリック
-1-3. 画像をドラッグアンドドロップ（ファイル名を自分の名前(英字)にしておくと良い）して各項目を入力。ボタン押して終わり。
+1-1. `icons` フォルダをクリック  
+![](https://imgur.com/OjQAZlQ)
+
+1-2. `Upload files` をクリック  
+![](https://imgur.com/vPPzQ3R)
+
+1-3. 画像をドラッグアンドドロップ（ファイル名を自分の名前(英字)にしておくと良い）して各項目を入力。ボタン押して終わり。  
+![](https://imgur.com/eAMyrnp)
 
 ### 2. 自己紹介を記述
 2-1. `member.json` をクリック
+![](https://imgur.com/fDoN7Ll)
+
 2-2. 鉛筆アイコンをクリック
+![](https://imgur.com/J2bpizm)
+
 2-3. テンプレに従って情報を入力。テンプレについては下で詳しく。
+
 2-4. `Create a new branch for this commit...` に変更。
+![](https://imgur.com/BaMLhbZ)
+
 2-5. Commit changes を入力してボタンを押す。
+
+2-6. Create pull request を押す。
+![](https://imgur.com/vEbJQK6)
 
 ### テンプレについて
 
 - 書きたくない内容は、""を付けず `null` と書くことで非表示にできます。
-- 各種SNSのidは、下記の***の部分に自動で入るのでフルパスを書かないでください。
+- 各種SNSのidは、下記の *** の部分に自動で入るのでフルパスを書かないでください。
 - `channels` にはお気に入りのチャンネルや、良く出没するチャンネルを書いておくと、新規加入者がどんなチャンネルがあるのかわかってよいです。
 - JSONは、次のオブジェクトがある場合は `,` をデータの末尾につけなきゃいけないのでお忘れなく。
 
