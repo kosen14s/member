@@ -21,30 +21,30 @@ https://github.com/orgs/kosen14s/people
 
 ### 1. アイコン画像をアップロード
 1-1. `icons` フォルダをクリック  
-![](https://imgur.com/OjQAZlQ)
+![](https://imgur.com/OjQAZlQ.png)
 
 1-2. `Upload files` をクリック  
-![](https://imgur.com/vPPzQ3R)
+![](https://imgur.com/vPPzQ3R.png)
 
 1-3. 画像をドラッグアンドドロップ（ファイル名を自分の名前(英字)にしておくと良い）して各項目を入力。ボタン押して終わり。  
-![](https://imgur.com/eAMyrnp)
+![](https://imgur.com/eAMyrnp.png)
 
 ### 2. 自己紹介を記述
-2-1. `member.json` をクリック
-![](https://imgur.com/fDoN7Ll)
+2-1. `member.json` をクリック  
+![](https://imgur.com/fDoN7Ll.png)
 
-2-2. 鉛筆アイコンをクリック
-![](https://imgur.com/J2bpizm)
+2-2. 鉛筆アイコンをクリック  
+![](https://imgur.com/J2bpizm.png)
 
 2-3. テンプレに従って情報を入力。テンプレについては下で詳しく。
 
-2-4. `Create a new branch for this commit...` に変更。
-![](https://imgur.com/BaMLhbZ)
+2-4. `Create a new branch for this commit...` に変更。  
+![](https://imgur.com/BaMLhbZ.png)
 
 2-5. Commit changes を入力してボタンを押す。
 
-2-6. Create pull request を押す。
-![](https://imgur.com/vEbJQK6)
+2-6. Create pull request を押す。  
+![](https://imgur.com/vEbJQK6.png)
 
 ### テンプレについて
 
