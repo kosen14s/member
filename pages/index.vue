@@ -67,15 +67,15 @@ export default {
       }
     }
   },
-  asyncData({}) {//わからん
-    axios.get(`https://kosen14s.github.io/member/json/members.json`)
-      .then((res) => {
-        console.log(res.data)
-        return { members : res.data }
-      })
-  },
+  // asyncData({}) {//わからん
+  //   axios.get(`https://kosen14s.github.io/member/json/members.json`)
+  //     .then((res) => {
+  //       console.log(res.data)
+  //       return { members : res.data }
+  //     })
+  // },
   created: function() {
-    fetch('https://kosen14s.github.io/member/json/members.json')
+    fetch('https://raw.githubusercontent.com/kosen14s/member/master/json/members.json')
       .then(res => res.json())
       .then(json => {
         this.members = json
