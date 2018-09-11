@@ -20,6 +20,7 @@
 
 <script>
 import axios from 'axios'
+import fetch from 'node-fetch'
 import Header from '~/components/member/Header.vue'
 import MemberList from '~/components/member/MemberList.vue'
 
@@ -67,11 +68,17 @@ export default {
     }
   },
   asyncData({}) {//わからん
-    console.log("asyncData")
     axios.get(`https://kosen14s.github.io/member/json/members.json`)
       .then((res) => {
         console.log(res.data)
         return { members : res.data }
+      })
+  },
+  created: function() {
+    fetch('https://kosen14s.github.io/member/json/members.json')
+      .then(res => res.json())
+      .then(json => {
+        this.members = json
       })
   }
 }
