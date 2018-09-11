@@ -67,7 +67,8 @@ export default {
     }
   },
   asyncData({}) {//わからん
-    axios.get(`./json/members.json`)
+    console.log("asyncData")
+    axios.get(`https://kosen14s.github.io/member/json/members.json`)
       .then((res) => {
         console.log(res.data)
         return { members : res.data }
