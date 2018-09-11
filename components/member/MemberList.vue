@@ -5,7 +5,7 @@
         div
           .member-header
             .member-color
-            img(:src="'~/assets/images/icons/'+ member.icon" :alt="'icon'").member-icon
+            img(:src="'./icons/${member.icon}'" :alt="'icon'").member-icon
             .member-name
               h2 {{member.name}}
               <LinkList :links="member.links"/>

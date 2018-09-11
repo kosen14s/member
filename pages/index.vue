@@ -67,7 +67,7 @@ export default {
     }
   },
   asyncData({}) {//わからん
-    axios.get(`/assets/json/members.json`)
+    axios.get(`./json/members.json`)
       .then((res) => {
         console.log(res.data)
         return { members : res.data }
