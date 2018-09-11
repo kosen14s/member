@@ -55,19 +55,19 @@ https://github.com/orgs/kosen14s/people
 
 ```
 {
-  "name":"自分の名前（ペンネーム）を入力",
-  "icon":"先ほどUploadしたアイコン画像のファイル名を入力",
-  "origin":"どこの学校か",
-  "area":"活動範囲でもいいし住んでる県でもいい",
+  "name":   "自分の名前（ペンネーム）を入力",
+  "icon":   "先ほどUploadしたアイコン画像のファイル名を入力",
+  "origin": "どこの学校か",
+  "area":   "活動範囲でもいいし住んでる県でもいい",
   "links": {
-    "site_url":"自分のサイトなどのフルパスを記述",
-    "twitter_id":"Idを@なしで記述 [https://twitter.com/***]",
-    "facebook_id":"Idを記述 [https://www.facebook.com/***]",
+    "site_url":     "自分のサイトなどのフルパスを記述",
+    "twitter_id":   "Idを@なしで記述 [https://twitter.com/***]",
+    "facebook_id":  "Idを記述 [https://www.facebook.com/***]",
     "instagram_id": "Idを記述 [https://www.instagram.com/***]",
-    "github_id":"Idを記述 [https://github.com/***]",
-    "tumblr_id":"Idを記述 [https://***.tumblr.com/]",
-    "blog_url":"自分のブログのフルパスを記述",
-    "youtube_url":"自分のチャンネルのフルパスを記述"
+    "github_id":    "Idを記述 [https://github.com/***]",
+    "tumblr_id":    "Idを記述 [https://***.tumblr.com/]",
+    "blog_url":     "自分のブログのフルパスを記述",
+    "youtube_url":  "自分のチャンネルのフルパスを記述"
   },
   "channels": [
     "design","video","frontend","font","emoji","virtial-youtuber"
