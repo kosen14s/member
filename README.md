@@ -7,7 +7,7 @@ kosen14sのメンバーを紹介するサイトです。
 
 > Nuxt.js project
 
-## メンバーの追加
+# メンバーの追加
 
 メンバーページに自己紹介を追加するには2つの方法があります。
 
@@ -19,34 +19,34 @@ kosen14sのメンバーを紹介するサイトです。
 対応する側のメンバーは、ココ↓の `Invite member` を押してアカウント名入力すればメンバーに追加できる。  
 https://github.com/orgs/kosen14s/people 
 
-### 1. アイコン画像をアップロード
-1-1. `icons` フォルダをクリック  
+## 1. アイコン画像をアップロード
+### 1-1. `icons` フォルダをクリック
 ![](https://imgur.com/OjQAZlQ.png)
 
-1-2. `Upload files` をクリック  
+### 1-2. `Upload files` をクリック  
 ![](https://imgur.com/vPPzQ3R.png)
 
-1-3. 画像をドラッグアンドドロップ（ファイル名を自分の名前(英字)にしておくと良い）して各項目を入力。ボタン押して終わり。  
+### 1-3. 画像をドラッグアンドドロップ（ファイル名を自分の名前(英字)にしておくと良い）して各項目を入力。ボタン押して終わり。  
 ![](https://imgur.com/eAMyrnp.png)
 
-### 2. 自己紹介を記述
-2-1. `member.json` をクリック  
+## 2. 自己紹介を記述
+### 2-1. `member.json` をクリック  
 ![](https://imgur.com/fDoN7Ll.png)
 
-2-2. 鉛筆アイコンをクリック  
+### 2-2. 鉛筆アイコンをクリック  
 ![](https://imgur.com/J2bpizm.png)
 
-2-3. テンプレに従って情報を入力。テンプレについては下で詳しく。
+### 2-3. テンプレに従って情報を入力。テンプレについては下で詳しく。
 
-2-4. `Create a new branch for this commit...` に変更。  
+### 2-4. `Create a new branch for this commit...` に変更。  
 ![](https://imgur.com/BaMLhbZ.png)
 
-2-5. Commit changes を入力してボタンを押す。
+### 2-5. Commit changes を入力してボタンを押す。
 
-2-6. Create pull request を押す。  
+### 2-6. Create pull request を押す。  
 ![](https://imgur.com/vEbJQK6.png)
 
-### テンプレについて
+## テンプレについて
 
 - 書きたくない内容は、""を付けず `null` と書くことで非表示にできます。
 - 各種SNSのidは、下記の *** の部分に自動で入るのでフルパスを書かないでください。
@@ -80,7 +80,7 @@ https://github.com/orgs/kosen14s/people
 },
 ```
 
-## Build Setup
+# Build Setup
 
 ``` bash
 # install dependencies
