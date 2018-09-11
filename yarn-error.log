@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js build:gh-pages
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js generate
 
 PATH: 
   C:\Users\Chige\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Chige\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\Chige\Downloads\php-7.1.8-Win32-VC14-x64;C:\ProgramData\ComposerSetup\bin;C:\Users\Chige\AppData\Local\Programs\Python\Python36;C:\Users\Chige\AppData\Local\Programs\Python\Python36\Scripts;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Ruby24-x64\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Users\Chige\AppData\Local\atom\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Chige\AppData\Roaming\Composer\vendor\bin;C:\Users\Chige\AppData\Local\Yarn\bin;C:\Users\Chige\AppData\Roaming\npm;C:\Program Files (x86)\EaseUS\Todo Backup\bin\x64;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -27,11 +27,12 @@ npm manifest:
       "generate": "nuxt generate",
       "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
       "precommit": "npm run lint",
-      "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-      "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate"
+      "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+      "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
     },
     "dependencies": {
       "axios": "^0.18.0",
+      "cross-env": "^5.2.0",
       "nuxt": "^1.0.0"
     },
     "devDependencies": {
@@ -1709,6 +1710,13 @@ Lockfile:
       safe-buffer "^5.0.1"
       sha.js "^2.4.8"
   
+  cross-env@^5.2.0:
+    version "5.2.0"
+    resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.2.0.tgz#6ecd4c015d5773e614039ee529076669b9d126f2"
+    dependencies:
+      cross-spawn "^6.0.5"
+      is-windows "^1.0.0"
+  
   cross-spawn@^3.0.0:
     version "3.0.1"
     resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-3.0.1.tgz#1256037ecb9f0c5f79e3d6ef135e30770184b982"
@@ -1721,6 +1729,16 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
     dependencies:
       lru-cache "^4.0.1"
+      shebang-command "^1.2.0"
+      which "^1.2.9"
+  
+  cross-spawn@^6.0.5:
+    version "6.0.5"
+    resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
+    dependencies:
+      nice-try "^1.0.4"
+      path-key "^2.0.1"
+      semver "^5.5.0"
       shebang-command "^1.2.0"
       which "^1.2.9"
   
@@ -3348,7 +3366,7 @@ Lockfile:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
   
-  is-windows@^1.0.2:
+  is-windows@^1.0.0, is-windows@^1.0.2:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   
@@ -3947,6 +3965,10 @@ Lockfile:
     version "1.0.0"
     resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   
+  nice-try@^1.0.4:
+    version "1.0.5"
+    resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
+  
   no-case@^2.2.0:
     version "2.3.2"
     resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
@@ -4428,7 +4450,7 @@ Lockfile:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/path-is-inside/-/path-is-inside-1.0.2.tgz#365417dede44430d1c11af61027facf074bdfc53"
   
-  path-key@^2.0.0:
+  path-key@^2.0.0, path-key@^2.0.1:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/path-key/-/path-key-2.0.1.tgz#411cadb574c5a140d3a4b1910d40d80cc9f40b40"
   
@@ -6885,8 +6907,8 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c DEPLOY_ENV=GH_PAGES nuxt build
-  Directory: C:\Users\Chige\Documents\work\project\kosen14s\kosen14s-member
+  Arguments: /d /s /c nuxt generate
+  Directory: C:\Users\Chige\Documents\work\project\kosen14s\member
   Output:
   
       at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)

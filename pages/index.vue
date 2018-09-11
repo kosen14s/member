@@ -66,10 +66,12 @@ export default {
       }
     }
   },
-  asyncData() {
-    return {
-      members: require(`~/assets/json/members.json`)
-    }
+  asyncData({}) {//わからん
+    axios.get(`/assets/json/members.json`)
+      .then((res) => {
+        console.log(res.data)
+        return { members : res.data }
+      })
   }
 }
 </script>
