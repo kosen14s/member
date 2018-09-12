@@ -43,5 +43,28 @@
     "I'M LIGHT OTAKU KOSEN STUDENT.",
     "LIKE: SUBCULTURES, ROMAN PROGRAMMING"
   ]
+},
+{
+  "name":   "ぐり",
+  "icon":   "guri.png",
+  "origin": "呉高専",
+  "area":   "広島県",
+  "links": {
+    "site_url":     null,
+    "twitter_id":   "Guri1999120",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "taira120",
+    "tumblr_id":    null,
+    "blog_url":     "https://10-1.hatenablog.com/",
+    "youtube_url":  null
+  },
+  "channels": [
+    
+  ],
+  "self_introduction": [
+    "メインはRuby/Railsで，最近CTFに興味が出てきている(一緒にやりたい",
+    "2019年度から筑波の情報学群に編入するらしい．"
+  ]
 }
 ]
