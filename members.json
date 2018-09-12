@@ -66,5 +66,28 @@
     "メインはRuby/Railsで，最近CTFに興味が出てきている(一緒にやりたい",
     "2019年度から筑波の情報学群に編入するらしい．"
   ]
+},
+{
+  "name":"やましー",
+  "icon":"yamasy1549.png",
+  "origin":"明石高専",
+  "area":"兵庫、大阪",
+  "links": {
+    "site_url": "https://yamasy.info",
+    "twitter_id": "yamasy1549",
+    "facebook_id": null,
+    "instagram_id": null,
+    "github_id": "yamasy1549",
+    "tumblr_id": null,
+    "blog_url": "https://yamasy1549.hateblo.jp",
+    "youtube_url": null
+  },
+  "channels": [
+    "font", "design", "frontend", "computer", "information"
+  ],
+  "self_introduction": [
+    "感情がわからないので感情推定の研究をしています。機械が人間に置き換わる世界を夢見ています。",
+    "「スーツ着て就活したくない」「Hello,Girls!」で検索。"
+  ]
 }
 ]
