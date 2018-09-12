@@ -46,6 +46,8 @@ https://github.com/orgs/kosen14s/people
 ### 2-6. Create pull request を押す。  
 ![](https://imgur.com/vEbJQK6.png)
 
+### 2-7. Slackで「pull request 投げました」と報告。
+
 ## テンプレについて
 
 - 書きたくない内容は、""を付けず `null` と書くことで非表示にできます。
