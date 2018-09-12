@@ -89,5 +89,28 @@
     "感情がわからないので感情推定の研究をしています。機械が人間に置き換わる世界を夢見ています。",
     "「スーツ着て就活したくない」「Hello,Girls!」で検索。"
   ]
+},
+{
+  "name":   "ptr-yudai",
+  "icon":   "ptr-yudai.jpg",
+  "origin": "奈良高専",
+  "links": {
+    "site_url":     null,
+    "twitter_id":   "ptrYudai",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "ptr-yudai",
+    "tumblr_id":    null,
+    "blog_url":     "https://ptr-yudai.hatenablog.com/",
+    "youtube_url":  null
+  },
+  "channels": [
+    "math","english","low_layer"
+  ],
+  "self_introduction": [
+    "CTFでforensics, stegano, pwnあたりを担当してます．",
+    "それ以外の趣味はピアノ，中国語，物理化学，あとQRコードです．",
+    "2019年度から東工大に編入します．"
+  ]
 }
 ]
