@@ -365,5 +365,28 @@
     "自己紹介文一行目",
     "自己紹介文二行目"
   ]
+},
+{
+  "name":"ふるつき",
+  "icon":"theoldmoon0602.png",
+  "origin":"NARA KOSEN",
+  "area":"NARA",
+  "links": {
+    "site_url": null,
+    "twitter_id":"theoldmoon0602",
+    "facebook_id":null
+    "instagram_id": null,
+    "github_id":"theoldmoon0602",
+    "tumblr_id":null,
+    "blog_url":null,
+    "youtube_url":null
+  },
+  "channels": [
+    "sada", "computer", "functional"
+  ],
+  "self_introduction": [
+    "I'M LIGHT OTAKU KOSEN STUDENT.",
+    "LIKE: SUBCULTURES, ROMAN PROGRAMMING"
+  ]
 }
 ]
