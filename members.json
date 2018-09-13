@@ -112,5 +112,26 @@
     "それ以外の趣味はピアノ，中国語，物理化学，あとQRコードです．",
     "2019年度から東工大に編入します．"
   ]
-}
-]
+},
+{
+  "name":   "Shuft鯖",
+  "icon":   "sabamiso.png",
+  "origin": "京都の高専",
+  "area":   "日本海",
+  "links": {
+    "site_url":     "http://鯖屋.com",
+    "twitter_id":   "_shuft",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "ShuftBK",
+    "tumblr_id":    null,
+    "blog_url":     null,
+    "youtube_url":  null
+  },
+  "channels": [
+    "otaku"
+  ],
+  "self_introduction": [
+    "お　い　し　い　さ　ば　み　そ"
+  ]
+}]
