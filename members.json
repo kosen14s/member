@@ -17,8 +17,8 @@
     "design","video","frontend","font","emoji","virtial-youtuber"
   ],
   "self_introduction": [
-    "Vue.jsを最近やってます！",
-    "AviUtlが僕の十八番で、動画制作の人です！"
+    "Vue.jsを最近やってます",
+    "AviUtlが十八番、動画制作の人"
   ]
 },
 {
@@ -155,5 +155,29 @@
   ],
   "self_introduction": [
     "A ROR ?"
+  ]
+},
+{
+  "name":   "shinkwhek",
+  "icon":   "shinkwhek.png",
+  "origin": null,
+  "area": "地球",
+  "links": {
+    "site_url":     null,
+    "twitter_id":   "shinkwhek",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "shinkwhek",
+    "tumblr_id":    "shinkwhek",
+    "blog_url":     "https://shinkwhek.github.com/",
+    "youtube_url":  null
+  },
+  "channels": [
+    "math","functional","low_layer", "computer","otaku", "illust"
+  ],
+  "self_introduction": [
+    "パソコンさわってあそぶやつやってる。",
+    "最近は絵とかモデリングとかもやってる。",
+    "猫かもしれない。"
   ]
 }]
