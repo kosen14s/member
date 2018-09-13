@@ -134,4 +134,28 @@
   "self_introduction": [
     "お　い　し　い　さ　ば　み　そ"
   ]
+},
+{
+  "name":   "shinkwhek",
+  "icon":   "shinkwhek.png",
+  "origin": null,
+  "area": "地球",
+  "links": {
+    "site_url":     null,
+    "twitter_id":   "shinkwhek",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "shinkwhek",
+    "tumblr_id":    "https://shinkwhek.tumblr.com/",
+    "blog_url":     "https://shinkwhek.github.com/",
+    "youtube_url":  null
+  },
+  "channels": [
+    "math","functional","low_layer", "computer","otaku", "illust"
+  ],
+  "self_introduction": [
+    "パソコンさわってあそぶやつやってる。",
+    "最近は絵とかモデリングとかもやってる。",
+    "猫かもしれない。"
+  ]
 }]
