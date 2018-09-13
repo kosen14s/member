@@ -17,8 +17,8 @@
     "design","video","frontend","font","emoji","virtial-youtuber"
   ],
   "self_introduction": [
-    "Vue.jsを最近やってます！",
-    "AviUtlが僕の十八番で、動画制作の人です！"
+    "Vue.jsを最近やってます",
+    "AviUtlが十八番、動画制作の人"
   ]
 },
 {
@@ -133,6 +133,28 @@
   ],
   "self_introduction": [
     "お　い　し　い　さ　ば　み　そ"
+  ]
+},
+{
+  "name": "kyumina",
+  "icon": "kyumina.png",
+  "origin": "奈良高専",
+  "area": "SHIKA",
+  "links": {
+    "site_url":     null,
+    "twitter_id":   "kyumina8376",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "kyumina",
+    "tumblr_id":    null,
+    "blog_url":     "http://kyumina.hatenablog.com/",
+    "youtube_url":  null
+  },
+  "channels":[
+    "secret"
+  ],
+  "self_introduction": [
+    "A ROR ?"
   ]
 },
 {
