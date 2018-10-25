@@ -161,7 +161,7 @@
   "name":   "shinkwhek",
   "icon":   "shinkwhek.png",
   "origin": null,
-  "area": "地球",
+  "area": null,
   "links": {
     "site_url":     null,
     "twitter_id":   "shinkwhek",
@@ -173,12 +173,10 @@
     "youtube_url":  null
   },
   "channels": [
-    "math","functional","low_layer", "computer","otaku", "illust"
+    "otaku", "illust"
   ],
   "self_introduction": [
-    "パソコンさわってあそぶやつやってる。",
-    "最近は絵とかモデリングとかもやってる。",
-    "猫かもしれない。"
+    "山と絵"
   ]
 },
 {
