@@ -202,4 +202,28 @@
     "面白そうな 出来事/モノ に飛びつきます",
     "来年から社会人です"
   ]
-}]
+},
+{
+  "name":   "はましぎ",
+  "icon":   "はましぎアイコンwhite.jpg",
+  "origin": "茨城高専",
+  "area":   "北関東",
+  "links": {
+    "site_url":      null
+    "twitter_id":   "hamashigi",
+    "facebook_id":   null
+    "instagram_id":  null
+    "github_id":     "Hamashigi",
+    "tumblr_id":     null
+    "blog_url":     "https://hamashigi.hatenablog.com/",
+    "youtube_url":  null
+  },
+  "channels": [
+     null
+  ],
+  "self_introduction": [
+    "回路屋，ロボコン勢，モータードライバばっかりつくる人",
+    "2019~しゃかいじん"
+  ]
+},
+]
