@@ -209,18 +209,16 @@
   "origin": "茨城高専",
   "area":   "北関東",
   "links": {
-    "site_url":      null
+    "site_url":      null,
     "twitter_id":   "hamashigi",
-    "facebook_id":   null
-    "instagram_id":  null
+    "facebook_id":   null,
+    "instagram_id":  null,
     "github_id":     "Hamashigi",
-    "tumblr_id":     null
+    "tumblr_id":     null,
     "blog_url":     "https://hamashigi.hatenablog.com/",
-    "youtube_url":  null
+    "youtube_url":  null,
   },
-  "channels": [
-     null
-  ],
+  "channels": [],
   "self_introduction": [
     "回路屋，ロボコン勢，モータードライバばっかりつくる人",
     "2019~しゃかいじん"
