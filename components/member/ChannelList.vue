@@ -1,7 +1,7 @@
 <template>
-  <div class="contents channels">
+  <div class="contents channels" v-if="channels.length!=0">
     <p class="property-name">お気に入りチャンネル：</p>
-    <ul class="property" v-if="channels">
+    <ul class="property">
       <li v-for="channel in channels" :key="channel.id" class="channel">
         <button @click="$emit('addchanneltag', channel)" class="channel_button">{{"# "+channel}}</button>
       </li>
