@@ -62,22 +62,36 @@
 
         for (var i in this.members) {
             var member = this.members[i];
+            console.log(this.filter.search.toLowerCase());
+            var search_text = this.filter.search.toLowerCase();
             var self_intro_txt = "";
-            var channeltag_link = [];
+            var channeltag_link = 0;
+            var origin = "";
+            var area = "";
 
-            for (var j in member.self_introduction) {
+            if(member.self_introduction != null){
+              for (var j in member.self_introduction) {
                 self_intro_txt = self_intro_txt + member.self_introduction[j];
-            }
-            for (var j in member.channels){
-              if(this.filter.channeltags.indexOf(member.channels[j]) !== -1){
-                channeltag_link.push(true);
               }
             }
-            if((member.name.toLowerCase().indexOf(this.filter.search.toLowerCase()) !== -1 ||
-              member.origin.toLowerCase().indexOf(this.filter.search.toLowerCase()) !== -1 ||
-              member.area.toLowerCase().indexOf(this.filter.search.toLowerCase()) !== -1 ||
-              self_intro_txt.toLowerCase().indexOf(this.filter.search.toLowerCase()) !== -1)
-              && (channeltag_link.length==this.filter.channeltags.length)) {
+            if(member.channels != null){
+              for (var j in member.channels){
+                if(this.filter.channeltags.indexOf(member.channels[j]) !== -1){
+                  channeltag_link++;
+                }
+              }
+            }
+            if(member.origin != null){
+              origin = member.origin;
+            }
+            if(member.area != null){
+              area = member.area;
+            }
+            if((member.name.toLowerCase().indexOf(search_text) !== -1 ||
+              origin.toLowerCase().indexOf(search_text) !== -1 ||
+              area.toLowerCase().indexOf(search_text) !== -1 ||
+              self_intro_txt.toLowerCase().indexOf(search_text) !== -1)
+              && (channeltag_link==this.filter.channeltags.length)) {
               if(display_vol >= hit){
                 seachmembers.push(member);
               }
