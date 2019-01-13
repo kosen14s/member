@@ -10,22 +10,22 @@
               h2 {{member.name}}
               <LinkList :links="member.links"/>
 
-          .contents.origin-box(v-show="detail")
-            p.origin(v-show="member.origin") {{member.origin}}
+          .contents.origin-box(v-if="detail")
+            p.origin(v-if="member.origin") {{member.origin}}
 
-          .contents.area-box(v-show="detail")
-            p.property-name 生息地：
-            p.property(v-show="member.area") {{member.area}}
+          .contents.area-box(v-if="detail")
+            p.property-name(v-if="member.area") 生息地：
+            p.property(v-if="member.area") {{member.area}}
 
-          .self-info-box(v-show="detail")
+          .self-info-box(v-if="detail")
             p.property-name コメント：
             p(v-for="selfinfo in member.self_introduction" :key="selfinfo.id").self-info {{selfinfo}}
 
-          <ChannelList :channels="member.channels" v-on:addchanneltag="addChannelTag" v-show="detail"/>
-      .more-display(v-show="filteredView.length<this.filter.search_hit && filteredView.length>0")
+          <ChannelList :channels="member.channels" v-on:addchanneltag="addChannelTag" v-if="detail"/>
+      .more-display(v-if="filteredView.length<this.filter.search_hit && filteredView.length>0")
         button(@click="filter.display = filter.display+6") さらに表示
 
-    div(v-show="filteredView.length==0") フィルタリングの結果、ヒットしませんでした。
+    div(v-if="filteredView.length==0") フィルタリングの結果、ヒットしませんでした。
 </template>
 <script>
   import LinkList from '~/components/member/LinkList.vue'
