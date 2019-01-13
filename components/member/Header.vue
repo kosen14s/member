@@ -1,22 +1,23 @@
 <template lang="pug">
   div
-    header
+    header(:style="'background-color:'+season.color")
       .container
         .title
           a(href="https://kosen14s.github.io").sub-title
             img(src="~/assets/images/kosen14s_logo.png" alt="logo")
-            h2 kosen14s
+            h2 kosen14s 
+              span TOP
           h1 #profile
         p.discription kosen14sのメンバーのうち、{{members.length}}人が自己紹介を書いてくれました。
-      .display-detail
-        button(v-show="detail == true" @click="$emit('display-detail')") 詳細を閉じる
-        button(v-show="detail == false" @click="$emit('display-detail')") 詳しく表示
+        .display-detail
+          button(v-show="detail == true" @click="$emit('display-detail')") 詳細を閉じる
+          button(v-show="detail == false" @click="$emit('display-detail')") 詳しく表示
 
 </template>
 
 <script>
   export default {
-    props:["members","detail"],
+    props:["members","detail","season"],
   }
 </script>
 
@@ -26,10 +27,11 @@
 @import '~assets/styles/mixin.scss';
 
 header {
-  background: #4c9689;
+  background-color: #fff;
   color: white;
   padding: 32px 0 18px;
   position: relative;
+  transition: .5s ease-out;
   .title {
     a.sub-title {
       display: inline-flex;
@@ -48,11 +50,14 @@ header {
         margin: 0;
         padding-top: 2px;
         padding-left: 8px;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
+        span {
+          font-size: 2rem;
+        }
       }
     }
     h1 {
-      margin: .5rem 0;
+      margin: 1.2rem 0 .8rem;
       font-size: 4rem;
     }
   }
@@ -61,8 +66,8 @@ header {
   }
   .display-detail {
     position: absolute;
-    bottom: 30px;
-    right: 40px; 
+    bottom: 8px;
+    right: 0;
     button {
       @include inputbutton;
       background: white;

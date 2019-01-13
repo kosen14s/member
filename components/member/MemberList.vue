@@ -21,18 +21,18 @@
             p.property-name コメント：
             p(v-for="selfinfo in member.self_introduction" :key="selfinfo.id").self-info {{selfinfo}}
 
-          ChannelList(:channels="member.channels" v-on:addchanneltag="addChannelTag" v-if="detail")
+          ChannelList(:channels="member.channels" :season="season" v-on:addchanneltag="addChannelTag" v-if="detail")
       .more-display(v-if="filteredView.length<this.filter.search_hit && filteredView.length>0")
         button(@click="filter.display = filter.display+6") さらに表示
 
-    div(v-if="filteredView.length==0") フィルタリングの結果、ヒットしませんでした。
+    div(v-if="filteredView.length==0 && load==true") フィルタリングの結果、ヒットしませんでした。
 </template>
 <script>
   import LinkList from '~/components/member/LinkList.vue'
   import ChannelList from '~/components/member/ChannelList.vue'
 
   export default {
-    props: ["filter","members","detail"],
+    props: ["filter","members","detail","season"],
     data(){
       return {
       }

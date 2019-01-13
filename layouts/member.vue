@@ -55,6 +55,7 @@ p {
 .container {
   width: 1500px;
   margin:auto;
+  position: relative;
 }
 @media(max-width: 1600px) {
   :root {

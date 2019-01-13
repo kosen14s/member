@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js generate
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js run dev
 
 PATH: 
-  C:\Users\Chige\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Chige\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\Chige\Downloads\php-7.1.8-Win32-VC14-x64;C:\ProgramData\ComposerSetup\bin;C:\Users\Chige\AppData\Local\Programs\Python\Python36;C:\Users\Chige\AppData\Local\Programs\Python\Python36\Scripts;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Ruby24-x64\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Users\Chige\AppData\Local\atom\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Chige\AppData\Roaming\Composer\vendor\bin;C:\Users\Chige\AppData\Local\Yarn\bin;C:\Users\Chige\AppData\Roaming\npm;C:\Program Files (x86)\EaseUS\Todo Backup\bin\x64;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Users\Chige\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Chige\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;C:\HashiCorp\Vagrant\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Users\Chige\Downloads\php-7.1.8-Win32-VC14-x64;C:\ProgramData\ComposerSetup\bin;C:\Users\Chige\AppData\Local\Programs\Python\Python36;C:\Users\Chige\AppData\Local\Programs\Python\Python36\Scripts;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\nodejs;C:\Program Files\Microsoft VS Code\bin;C:\Ruby25-x64\bin;C:\Ruby24-x64\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Users\Chige\AppData\Local\atom\bin;C:\Users\Chige\AppData\Local\Microsoft\WindowsApps;C:\Users\Chige\AppData\Roaming\Composer\vendor\bin;C:\Users\Chige\AppData\Local\Yarn\bin;C:\Users\Chige\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.5.1
@@ -24,7 +24,7 @@ npm manifest:
       "dev": "nuxt",
       "build": "nuxt build",
       "start": "nuxt start",
-      "generate": "nuxt generate && ",
+      "generate": "nuxt generate",
       "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
       "precommit": "npm run lint",
       "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
@@ -6912,7 +6912,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c nuxt generate && 
+  Arguments: /d /s /c nuxt
   Directory: C:\Users\Chige\Documents\work\project\kosen14s\member
   Output:
   
