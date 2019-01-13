@@ -2,14 +2,13 @@
   .container.member
     ul.member_list
       li(v-for="member in filteredView" :key="member.id").member_list_item
-        img(:src="`https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}`" :alt="'icon'").back-icon
-        div.member_list_item_wrapper
+        .member_top_border
+        .member_list_item_wrapper
           .member-header
             img(:src="`https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}`" :alt="'icon'").member-icon
             .member-name
               h2 {{member.name}}
               LinkList(:links="member.links")
-
           .contents.origin-box(v-if="detail")
             p.origin(v-if="member.origin") {{member.origin}}
 
@@ -120,27 +119,23 @@
       padding: 10px;
       width: 31.4%;
       position: relative;
-      .back-icon {
+      .member_top_border{
         position: absolute;
-        top: 0;
-        left: 0;
+        top: -10px;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-        filter: opacity(30%) blur(20px);
+        height: 1px;
+        background-color: #ddd;
       }
       .member_list_item_wrapper{
-        padding-bottom: 16px;
-        z-index: 0;
+        padding-bottom: 30px;
       }
       .member-header {
         padding-top: 12px;
         display:flex;
         flex-wrap: nowrap;
         .member-icon {
-          width:80px;
-          height:80px;
+          width: 80px;
+          height: 80px;
           border: 1px solid #fff;
           background-color: #fff;
           border-radius: 20px;
