@@ -68,7 +68,7 @@
 @import '~assets/styles/mixin.scss';
 .link-list{
   display: inline-block;
-  padding-top: 8px;
+  padding-top: 4px;
   .link-box {
     margin: 0;
     padding: 0;
@@ -80,6 +80,10 @@
       .link-icon {
         width: 40px;
         height: 40px; //54px以上でロゴ使用権利範囲内
+        transition: .3s ease-out;
+        opacity: 1;
+        filter:brightness(80%);
+        transform: scale(1);
       }
       .link-icon-hover {
         position: absolute;
@@ -87,8 +91,17 @@
         left: 0;
         opacity: 0;
         transition: .3s ease-out;
-        &:hover{
+        filter:brightness(100%);
+        transform: scale(1);
+      }
+      &:hover {
+        .link-icon {
+          opacity: 0;
+          transform: scale(1.2);
+        }
+        .link-icon-hover {
           opacity: 1;
+          transform: scale(1.2);
         }
       }
     }

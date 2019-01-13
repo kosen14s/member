@@ -2,13 +2,13 @@
   .container.member
     ul.member_list
       li(v-for="member in filteredView" :key="member.id").member_list_item
-        div
+        img(:src="`https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}`" :alt="'icon'").back-icon
+        div.member_list_item_wrapper
           .member-header
-            .member-color
             img(:src="`https://raw.githubusercontent.com/kosen14s/member/master/icons/${member.icon}`" :alt="'icon'").member-icon
             .member-name
               h2 {{member.name}}
-              <LinkList :links="member.links"/>
+              LinkList(:links="member.links")
 
           .contents.origin-box(v-if="detail")
             p.origin(v-if="member.origin") {{member.origin}}
@@ -21,7 +21,7 @@
             p.property-name コメント：
             p(v-for="selfinfo in member.self_introduction" :key="selfinfo.id").self-info {{selfinfo}}
 
-          <ChannelList :channels="member.channels" v-on:addchanneltag="addChannelTag" v-if="detail"/>
+          ChannelList(:channels="member.channels" v-on:addchanneltag="addChannelTag" v-if="detail")
       .more-display(v-if="filteredView.length<this.filter.search_hit && filteredView.length>0")
         button(@click="filter.display = filter.display+6") さらに表示
 
@@ -116,36 +116,43 @@
     flex-wrap: wrap;
     li.member_list_item {
       margin: 4px;
-      padding: 36px;
       border-radius: 0;
-      width: 28%;
+      padding: 10px;
+      width: 31.4%;
+      position: relative;
+      .back-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: opacity(30%) blur(20px);
+      }
+      .member_list_item_wrapper{
+        padding-bottom: 16px;
+        z-index: 0;
+      }
       .member-header {
         padding-top: 12px;
         display:flex;
         flex-wrap: nowrap;
-        position: relative;
-        .member-color {
-          position: absolute;
-          top: -18px;
-          left: 0;
-          right: 0;
-          margin: auto;
-          width: 100%;
-          height: 1px;
-          background-color: #999;
-        }
         .member-icon {
           width:80px;
           height:80px;
-          border: 1px solid #ddd;
+          border: 1px solid #fff;
+          background-color: #fff;
           border-radius: 20px;
           margin-right: 20px;
         }
         .member-name{
+          padding-top: 8px;
           h2 {
             font-size: 2.4rem;
             margin: 0;
             display: block;
+            padding-left: 8px;
           }
         }
       }

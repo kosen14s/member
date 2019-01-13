@@ -1,12 +1,10 @@
 <template lang="pug">
   div
-    <Header :members="members" :detail="detail" @display-detail="toggleDetail"/>
+    Header(:members="members" :detail="detail" @display-detail="toggleDetail")
     section.filter
       .container
         .search-box
           input(v-model="filter.search" placeholder="キーワード検索").filter-search
-          //- button(@click="filter.display=6").filter-display 6人表示
-          //- button(@click="filter.display=12").filter-display 12人表示
           ul(v-show="filter.channeltags.length").filter-tag-box
             li(v-for="channeltag in filter.channeltags" :key="channeltag.id").channel
               button(@click="removeChannelTag(channeltag)").channel_button {{"# "+channeltag}}
@@ -15,7 +13,7 @@
           p Filtering result :  {{this.filter.search_hit}} 人
           p Display :  {{this.filter.member_viewlength}} 人
 
-    <MemberList :filter="filter" :members="members" :detail="detail" @filtered-data="filteredData"/>
+    MemberList(:filter="filter" :members="members" :detail="detail" @filtered-data="filteredData")
 </template>
 
 <script>
