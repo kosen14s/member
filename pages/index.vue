@@ -1,21 +1,21 @@
 <template lang="pug">
-  div
-    <Header :members="members" :detail="detail" @display-detail="toggleDetail"/>
-    section.filter
-      .container
-        .search-box
-          input(v-model="filter.search" placeholder="キーワード検索").filter-search
-          //- button(@click="filter.display=6").filter-display 6人表示
-          //- button(@click="filter.display=12").filter-display 12人表示
-          ul(v-show="filter.channeltags.length").filter-tag-box
-            li(v-for="channeltag in filter.channeltags" :key="channeltag.id").channel
-              button(@click="removeChannelTag(channeltag)").channel_button {{"# "+channeltag}}
-            button(@click="removeAllTag").channel_button.channel_button_delete ×
-        .filter-current-status
-          p Filtering result :  {{this.filter.search_hit}} 人
-          p Display :  {{this.filter.member_viewlength}} 人
+  div.index
+    div(v-if="load==true")
+      Header(:members="members" :detail="detail" @display-detail="toggleDetail" :season="season")
+      section.filter
+        .container
+          .search-box
+            input(v-model="filter.search" placeholder="キーワード検索" :class="'filter-search-'+season.name").filter-search
+            ul(v-show="filter.channeltags.length").filter-tag-box
+              li(v-for="channeltag in filter.channeltags" :key="channeltag.id").channel
+                button(@click="removeChannelTag(channeltag)" :style="'background-color:'+season.color").channel_button {{"# "+channeltag}}
+              button(@click="removeAllTag").channel_button.channel_button_delete ×
+          .filter-current-status
+            p Filtering result :  {{this.filter.search_hit}} 人
+            p Display :  {{this.filter.member_viewlength}} 人
 
-    <MemberList :filter="filter" :members="members" :detail="detail" @filtered-data="filteredData"/>
+      MemberList(:filter="filter" :members="members" :detail="detail" :season="season" @filtered-data="filteredData")
+    .loading(v-if="load==false" :style="'background-color:'+season.color"): p 読み込み中です...
 </template>
 
 <script>
@@ -41,8 +41,16 @@ export default {
         all_channel_list: []
       },
       members: [],
-      detail: true
+      detail: true,
+      season:{},
+      load:false
     }
+  },
+  mounted() {
+    this.$nextTick(() => {
+      setTimeout(() => this.load=true, 500)
+    })
+    this.season = this.$NowSeason();
   },
   methods: {
     removeChannelTag(channeltag) {
@@ -88,7 +96,22 @@ export default {
 @import '~assets/styles/normalize.scss';
 @import '~assets/styles/variables.scss';
 @import '~assets/styles/mixin.scss';
-
+.index {
+  width: 100%;
+  position: relative;
+}
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s ease-out;
+  p {
+    font-size:3rem;
+    color: #fff;
+  }
+}
 .filter {
   margin-top: 8px;
   .search-box {
@@ -97,7 +120,7 @@ export default {
       @include inputbutton;
       border: 1px solid $member-def-lightgray;
       color: #222;
-      transition: .3s ease-out;
+      transition: .5s ease-out;
       &::placeholder {
         color: $member-def-lightgray;
       }
@@ -106,6 +129,30 @@ export default {
         color: white;
         border-color: $member-def;
         background: $member-def;
+      }
+      &-spring {
+        &:focus {
+          border-color: $spring;
+          background: $spring;
+        }
+      }
+      &-summer {
+        &:focus {
+          border-color: $summer;
+          background: $summer;
+        }
+      }
+      &-autumn {
+        &:focus {
+          border-color: $autumn;
+          background: $autumn;
+        }
+      }
+      &-winter {
+        &:focus {
+          border-color: $winter;
+          background: $winter;
+        }
       }
     }
     .filter-display {

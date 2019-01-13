@@ -10,12 +10,14 @@
 @import '~assets/styles/mixin.scss';
 
 html {
+  width: 100vw;
+  margin: 0;
   font-size: 62.5%;
   height: 100%;
   font-family: $noto-font;
 }
 body {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0;
   position: relative;
@@ -53,6 +55,7 @@ p {
 .container {
   width: 1500px;
   margin:auto;
+  position: relative;
 }
 @media(max-width: 1600px) {
   :root {
