@@ -205,7 +205,7 @@
 },
 {
   "name":   "はましぎ",
-  "icon":   "はましぎアイコンwhite.jpg",
+  "icon":   "hamashigi.jpg",
   "origin": "茨城高専",
   "area":   "北関東",
   "links": {
@@ -216,7 +216,7 @@
     "github_id":     "Hamashigi",
     "tumblr_id":     null,
     "blog_url":     "https://hamashigi.hatenablog.com/",
-    "youtube_url":  null,
+    "youtube_url":  null
   },
   "channels": [],
   "self_introduction": [
