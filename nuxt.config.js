@@ -23,7 +23,10 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
-  plugins: ['~/plugins/season.js'],
+  plugins: [
+    '~/plugins/season.js',
+    { src: '~plugins/ga.js', ssr: false }
+  ],
   /*
   ** Build configuration
   */
@@ -43,3 +46,4 @@ module.exports = {
     }
   }
 }
+
