@@ -1,5 +1,5 @@
 <template lang="pug">
-  div
+  div.index
     Header(:members="members" :detail="detail" @display-detail="toggleDetail")
     section.filter
       .container
@@ -86,7 +86,9 @@ export default {
 @import '~assets/styles/normalize.scss';
 @import '~assets/styles/variables.scss';
 @import '~assets/styles/mixin.scss';
-
+.index {
+  width: 100%;
+}
 .filter {
   margin-top: 8px;
   .search-box {

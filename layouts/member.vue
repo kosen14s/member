@@ -10,6 +10,8 @@
 @import '~assets/styles/mixin.scss';
 
 html {
+  width: 100vw;
+  margin: 0;
   font-size: 62.5%;
   height: 100%;
   font-family: $noto-font;
