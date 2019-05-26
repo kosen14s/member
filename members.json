@@ -158,6 +158,28 @@
   ]
 },
 {
+  "name": "miwpayou",
+  "icon": "miwpayou.png",
+  "origin": null,
+  "area": "Nara",
+  "links": {
+    "site_url":     "https://miwpayou0808.info",
+    "twitter_id":   "miwpayou0808",
+    "facebook_id":  null,
+    "instagram_id": null,
+    "github_id":    "mi-24v",
+    "tumblr_id":    null,
+    "blog_url":     null,
+    "youtube_url":  null
+  },
+  "channels":[
+    "ALL"
+  ],
+  "self_introduction": [
+    "SuperSleepこと極度睡眠(しなさい)の不足"
+  ]
+},
+{
   "name":   "shinkwhek",
   "icon":   "shinkwhek.png",
   "origin": null,
